@@ -4,13 +4,8 @@
 # © 2017-2019 Cotes Chung
 # MIT licensed
 
-
-# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-#--------------------------
-
-title: Chirpy                          # the main title
-
-tagline: A text-focused Jekyll theme.  # it will display as the sub-title
+title: Git Blog
+tagline: whfflapfhd github blog
 
 description: >-                        # used by seo meta and the atom feed
   A minimal, portfolio, sidebar,
@@ -78,7 +73,7 @@ disqus:
 #
 #     dark   - Use the dark color scheme
 #
-theme_mode: dual
+theme_mode: dark
 
 # boolean type, global switch for ToC in posts.
 toc: true
