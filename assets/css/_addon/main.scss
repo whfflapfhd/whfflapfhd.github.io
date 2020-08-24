@@ -241,16 +241,6 @@ $sidebar-display: "sidebar-display";
   img {
     width: 100%;    
     box-shadow: inset 0px -13px 20px 0px rgb(2 2 2 / 55%);
-    -webkit-transition: transform .1s;
-    -moz-transition: transform .1s;
-    transition: transform .1s;
-
-    &:hover {
-      -ms-transform: scale(1.2);
-      -moz-transform: scale(1.2);
-      -webkit-transform: scale(1.2);
-      transform: scale(1.2);
-    }
   }
 } // #avatar
 
