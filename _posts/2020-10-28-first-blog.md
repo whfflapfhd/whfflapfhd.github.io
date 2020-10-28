@@ -1,7 +1,7 @@
 ---
 title: First blog
 author: whfflapfhd
-date: YYYY-MM-DD HH:MM:SS +/-TTTT
+date: 2020-10-28 17:20:00 +/-0082
 categories: [Blogging, Demo]
 tags: [Demo]
 ---
