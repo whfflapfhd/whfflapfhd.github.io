@@ -5,7 +5,6 @@ date: 2019-08-08 11:33:00 +0800
 categories: [Blogging, Demo]
 tags: [typography]
 math: true
-image: /assets/img/sample/devices-mockup.png
 ---
 
 ## Titles
@@ -78,28 +77,28 @@ Click the hook will locate the footnote[^footnote].
 
 By default, the image is centered and the image caption can be displayed at the bottom:
 
-![Desktop View](/assets/img/sample/mockup.png)
+
 _Full screen width and center alignment_
 
 You can change the size of the picture:
 
-![Desktop View](/assets/img/sample/mockup.png){: width="400"}
+
 _400px image width_
 
 In addition, you can use class `normal` , `left` and `right` to specify the image position (but in these case, the image caption is prohibited), for example:
 
 - Normal position
   
-  ![Desktop View](/assets/img/sample/mockup.png){: width="350" class="normal"}
+
 
 - Float to the left
 
-  ![Desktop View](/assets/img/sample/mockup.png){: width="240" class="left"}
+
   "A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space."
 
 - Float to the right
 
-  ![Desktop View](/assets/img/sample/mockup.png){: width="240" class="right"}
+
   "A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space."
 
 ## Inline code
