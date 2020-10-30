@@ -1,11 +1,10 @@
 ---
 title: "[bookmark] animation, hover action"
-author: whfflapfhd
+author: whfflapfhd 
 date: 2020-10-30 15:50:00 +0900
 categories: [Bookmark, css]
 tags: [bookmark, css, gradient, box shadow]
 ---
-
 - Hover.css - 마우스 오버 효과  
    [http://ianlunn.github.io/Hover/](http://ianlunn.github.io/Hover/){:target="_blank"}
 - anicollection - 깔끔한 UI와 다양한 마우스 효과  
