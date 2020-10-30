@@ -18,7 +18,8 @@
     border-bottom: 1px solid var(--main-border-color);
 
     h1 {
-      font-size: 1.4rem;
+      font-size: 1.25rem;
+      font-weight: 200;
       margin: 0;
       ~i { // pinned icon
         font-size: .86rem;
@@ -40,11 +41,12 @@
       color: var(--post-list-text-color);
       >p {
         /* Make preview shorter on the homepage */
+        font-size:0.8rem;
         margin: 0;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 2;
+        -webkit-line-clamp: 1;
         -webkit-box-orient: vertical;
       }
     }
@@ -74,7 +76,7 @@
       align-items: center;
       border-radius: 50%;
       border: 1px solid var(--btn-paginator-border-color);
-      font-family: 'IBMPlexSansKR','Lato', sans-serif;
+      font-family: 'Poppins','IBMPlexSansKR','Lato', sans-serif;
       background-color: var(--button-bg);
       &:hover {
         background-color: var(--btn-paginator-hover-color)
