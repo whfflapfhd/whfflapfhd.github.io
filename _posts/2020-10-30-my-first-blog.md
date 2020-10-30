@@ -1,9 +1,9 @@
 ---
-title: Writing a New Post
+title: 블로그 첫 글 테스트
 author: whfflapfhd
-date: 2019-08-08 14:10:00 +0800
-categories: [Blogging, Tutorial]
-tags: [writing]
+date: 2020-10-30 10:10:00 +0900
+categories: [Code]
+tags: [snippet]
 ---
 
 ## Naming and Path

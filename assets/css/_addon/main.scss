@@ -59,7 +59,7 @@ body {
   background: var(--body-bg);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
-  font-family: 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
+  font-family: 'IBMPlexSansKR','Source Sans Pro', 'Microsoft Yahei', sans-serif;
 }
 
 /*--- sidebar layout ---*/
@@ -112,12 +112,11 @@ $sidebar-display: "sidebar-display";
   }
   .nav-link {
     border-radius: 0;
-    font-size: .95rem;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 300;
     letter-spacing: 1px;
   }
-  .nav-item {
-    height: $tab-height;
+  .nav-item {    
     &:hover {
       .nav-link {
         color: #f8f9facf;
@@ -129,8 +128,7 @@ $sidebar-display: "sidebar-display";
       }
     }
   }
-  ul {
-    height: $tab-height * $tab-count;
+  ul {    
     display: -webkit-box;
     display: -ms-flexbox;
 
@@ -396,7 +394,7 @@ $sidebar-display: "sidebar-display";
   display: none;
   font-size: 1.1rem;
   font-weight: 600;
-  font-family: sans-serif;
+  font-family: 'IBMPlexSansKR',sans-serif;
   color: var(--topbar-text-color);
   text-align: center;
   width: 70%;
@@ -1381,8 +1379,7 @@ div.post-content .table-wrapper {
       margin: .3rem 0 0 0;
     }
 
-    ul {
-      margin-left: 3%;
+    ul {    
       >li > a {
         padding-left: 2.5rem;
         -webkit-box-pack: start!important;
@@ -1391,15 +1388,33 @@ div.post-content .table-wrapper {
       }
     }
 
+    .cate {
+        flex-direction:column;
+        ul {
+            margin-left:0;
+            height:auto;
+            li {
+                width:100%;
+                a {
+                    padding-left: 1rem;
+                }
+            }
+        }
+
+        a {
+            margin:0
+        }
+    }
+    
+
     .nav-link {
       >span {
-        letter-spacing: 3px;
+        letter-spacing: 0;
       }
-      >i {
-        @include icon-round(1.65rem);
+      >i {        
         line-height: 1rem;
-        font-size: .6rem;
-        padding: .5em 0 0 .1em;
+        font-size: 1rem;
+        padding: 0 0 0 .1em;
         display: inline-block!important;
       }
     }
