@@ -117,6 +117,12 @@ $sidebar-display: "sidebar-display";
     font-size: 1rem;
     font-weight: 300;
     letter-spacing: 1px;
+    span{
+	&::before {
+		content:'|';
+		margin-right: 10px;
+	}
+    }
   }
   .nav-item {    
     &:hover {
