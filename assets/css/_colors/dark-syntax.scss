@@ -8,7 +8,7 @@
 
 @mixin dark-syntax {
   /* -----  My styles ------ */
-  --highlight-bg-color: #272822;
+  --highlight-bg-color: #000;
   --highlighter-rouge-color: #de6b18;
   --highlight-lineno-color: #6c6c6d;
   --highlight-lineno-border-color: #3c4042;
@@ -18,11 +18,11 @@
     .gp { color: #818c96; }
   }
 
-  pre { color: #818c96; } /* override Bootstrap */
+  pre { color: #5e5e5e; } /* override Bootstrap */
   kbd { background-color: black; }
 
   /* syntax highlight colors from https://raw.githubusercontent.com/jwarby/pygments-css/master/monokai.css */
-  .highlight pre { background-color: #272822; }
+  .highlight pre { background-color: #000; }
   .highlight .hll { background-color: #272822; }
   .highlight .c { color: #75715e; } /* Comment */
   .highlight .err { color: #960050; background-color: #1e0010; } /* Error */

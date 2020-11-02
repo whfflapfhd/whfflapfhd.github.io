@@ -288,7 +288,7 @@ $sidebar-display: "sidebar-display";
   height: 100%;
   overflow: auto;
   .post-content {
-    margin-top: 2rem;
+    margin-top: 2rem;    
   }
 }
 
@@ -481,6 +481,10 @@ $sidebar-display: "sidebar-display";
   min-height: calc(100vh - #{$topbar-height}
     - #{$footer-height} - #{$post-extend-min-height})!important;
   .post-content {
+    b,strong {
+        font-weight:500;
+        font-size:1.125rem;
+    }
     a:hover {
       @extend %link-hover;
     }
@@ -641,14 +645,14 @@ h2 {
   @extend %heading;
   @extend %section;
   @extend %anchor;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 h3 {
   @extend %heading;
   @extend %section;
   @extend %anchor;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 
 h4 {
@@ -842,7 +846,7 @@ div.post-content .table-wrapper {
     }
   }
   p {
-    font-size: 1.08rem;
+    font-size: 1rem;
   }
 }
 
@@ -1302,7 +1306,7 @@ div.post-content .table-wrapper {
   }
 
   .post-content p {
-    font-size: 1.03rem;
+    font-size: 1rem;
   }
 
   footer > div.d-felx {

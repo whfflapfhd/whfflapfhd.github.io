@@ -1,13 +1,102 @@
 ---
-title: 블로그 첫 글 테스트
+title: MarkDown 문법 정리
 author: whfflapfhd
 date: 2020-10-30 10:10:00 +0900
-categories: [Code]
-tags: [snippet]
+categories: [Note]
+tags: [markdown]
 ---
 
-## Naming and Path
+## Heading
 
-Create a new file named `YYYY-MM-DD-TITLE.EXTENSION` and put it in the `_post/` of the root directory. Please note that the `EXTENSION` must be one of `md` and `markdown`. From `v2.4.1`, you can create sub-directories under `_posts/` to categorize posts.
+`<h1>`부터 `<h6>`까지 글의 제목을 표현할 때 사용
+```
+# h1
+## h2
+### h3
+#### h4
+##### h5
+###### h6
+```
+`<h1>`과 `<h2>`는 다음과 같이 사용 가능
+```
+제목 1
+======
+제목 2
+------
+```
 
-## Front Matter
+## List
+순서가 필요한 목록 `<ol>`과 순서가 필요하지 않은 목록 `<ul>`태그로 치환   
+순서가 없는 목록은 `-`, `*`, `+` 기호를 사용할 수 있다.
+
+### Ordered list
+```
+<!-- 순서가 있는 목록 -->
+1. first item
+1. second item
+    1. sub item1
+    1. sub item2
+1. third item
+```
+1. first item
+1. second item
+    1. sub item1
+    1. sub item2
+1. third item
+
+### Unordered list
+```
+<!-- 순서가 없는 목록 -->
+- item 1
+    - sub item1
+    - sub item2
+* item 2
++ item 3
+```
+- item 1
+    - sub item1
+    - sub item2
+* item 2
++ item 3
+
+## Emphasis
+`<strong>`, `<em>`, `<del>` 등 텍스트를 강조하거나 꾸미고 싶을 때 사용  
+밑줄을 표시하고 싶다면 `<u>텍스트</u>`태그를 사용
+
+### Strong
+문장 내 강조하고 싶은 텍스트에 사용. `**텍스트**`로 표기
+
+```
+텍스트를 **강조**하고 싶을 때 사용합니다.
+```
+ 텍스트를 **강조**하고 싶을 때 사용합니다.
+
+### Italic
+텍스트에 기울임 글꼴 적용. `_텍스트_` 또는 `*텍스트*`로 표기
+
+```
+이 텍스트는 _이텔릭체_ 입니다.
+```
+ 이 텍스트는  _이텔릭체_ 입니다.
+
+### Del
+텍스트에 취소선 적용. `~~텍스트~~`로 표기
+
+```
+이 텍스트에 ~~취소선~~을 표시합니다.
+```
+ 이 텍스트에  ~~취소선~~을 표시합니다.
+ 
+### Underline
+텍스트에 밑 줄 적용. `<u>텍스트</u>`로 표기
+
+```
+이 텍스트에 <u>밑 줄</u>을 표시합니다.
+```
+ 이 텍스트에  <u>밑 줄</u>을 표시합니다.
+
+```
+<!-- 혼용해서 사용이 가능 -->
+*이텔릭  **강조** ~~취소선~~ <u>밑 줄</u>*
+```
+*이텔릭  **강조** ~~취소선~~ <u>밑 줄</u>*
