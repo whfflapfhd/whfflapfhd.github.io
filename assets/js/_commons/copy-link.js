@@ -10,7 +10,7 @@ function copyLink(url) {
   if (!url || 0 === url.length) {
     return;
   }
-
+$('.share-status').removeClass('on');
   url = window.location.href;
   var $temp = $("<input>");
 
@@ -18,7 +18,5 @@ function copyLink(url) {
   $temp.val(url).select();
   document.execCommand("copy");
   $temp.remove();
-
-  alert("Link copied successfully!");
-
+  $('.share-status').addClass('on');
 }
