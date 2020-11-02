@@ -1081,6 +1081,11 @@ div.post-content .table-wrapper {
   #sidebar-trigger,
   #search-trigger {
     display: block;
+    font-size:1.3rem;
+  }
+
+  #sidebar-trigger,
+  #search-trigger {    
     font-size:1.6rem;
   }
 
@@ -1136,6 +1141,9 @@ div.post-content .table-wrapper {
 
 /* Sidebar visible */
 @media all and (min-width: 831px) {
+#topbar-wrapper {
+    height: $topbar-height - 1rem;
+}
 
   /* Solved jumping scrollbar */  
 
