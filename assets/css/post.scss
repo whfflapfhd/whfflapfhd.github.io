@@ -318,6 +318,12 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
   .post img {
     max-width: calc(100% + 1rem);
   }
+  .post-navigation {
+    a:first-child, span:first-child,a:last-child, span:last-child {
+        padding-left:2.2rem;
+        padding-right:2.2rem
+    }
+  }
 }
 
 @media all and (min-width: 768px) {
