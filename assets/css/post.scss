@@ -88,15 +88,25 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
   a, span {
     &::before {
       color: var(--text-muted-color);
-      font-size: .65rem;
+      font-size: 1.2rem;
       text-transform: uppercase;
+    }
+    &:first-child,&:last-child {
+        &::before {
+            position:absolute;
+            top:50%;
+            transform: translateY(-50%);
+            font-family:"Font Awesome 5 Free";
+            font-weight:900
+          }
     }
     &:first-child {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
       left: .5px;
       &::before {
-        content: $prompt-older
+        content: $prompt-older;
+        left:15px;
       }
     }
     &:last-child {
@@ -104,9 +114,13 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
       border-bottom-left-radius: 0;
       right: .5px;
       &::before {
-        content: $prompt-newer
+        content: $prompt-newer;
+        right:15px;
       }
     }
+  }
+  a:hover:before, span:hover:before {
+      color:#fff
   }
 } // .post-navigation
 

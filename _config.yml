@@ -90,6 +90,8 @@ markdown: kramdown
 
 highlighter: rouge
 
+incremental: treu
+
 kramdown:
   input: GFM
   syntax_highlighter: rouge

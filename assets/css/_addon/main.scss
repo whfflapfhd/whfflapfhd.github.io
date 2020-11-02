@@ -113,6 +113,7 @@ $sidebar-display: "sidebar-display";
     }
   }
   .nav-link {
+    padding:.5rem 2rem;
     border-radius: 0;
     font-size: 1rem;
     font-weight: 300;
@@ -190,6 +191,27 @@ $sidebar-display: "sidebar-display";
     } // @for
 
   } // ul
+
+  .cate {
+    flex-direction:column;
+    ul {
+        display:flex;
+        flex-wrap:wrap;
+        margin-left:0;
+        height:auto;
+        li {
+            width:100%;
+            a {
+                padding-left: 1rem;
+                font-size: 0.875rem;
+                font-weight: 200;
+                .fa, .fas{
+                    font-weight:100
+                }
+            }
+        }
+    }
+}
 
   .sidebar-bottom {
     font-size: 1.2rem;
@@ -283,7 +305,7 @@ $sidebar-display: "sidebar-display";
   z-index: 50;
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.05);
-  background-color: var(--topbar-wrapper-bg);
+  background-color: var(--topbar-wrapper-bg);  
 }
 
 #topbar i { // icons
@@ -409,7 +431,7 @@ $sidebar-display: "sidebar-display";
 #topbar-title {
   display: none;
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 300;
   font-family: 'Poppins','IBMPlexSansKR',sans-serif;
   color: var(--topbar-text-color);
   text-align: center;
@@ -554,8 +576,8 @@ footer {
     padding: .3rem .5rem;
     margin: 0 .35rem .5rem 0;
     &:hover {
-      background-color: #2a408e;
-      border-color: #2a408e;
+      background-color: #1f58af;
+      border-color: #1f58af;
       color: #fff;
       transition: none;
     }
@@ -1043,6 +1065,7 @@ div.post-content .table-wrapper {
 
   #topbar-wrapper {
     left: 0;
+    padding-left:0
   }
 
   .topbar-up {
@@ -1058,6 +1081,7 @@ div.post-content .table-wrapper {
   #sidebar-trigger,
   #search-trigger {
     display: block;
+    font-size:1.6rem;
   }
 
   #search-wrapper {
@@ -1233,8 +1257,7 @@ div.post-content .table-wrapper {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 75%;
     flex: 0 0 75%;
-    max-width: 75%;
-    padding-left: 3%;
+    max-width: 75%;    
   }
 
   #topbar {
@@ -1282,8 +1305,8 @@ div.post-content .table-wrapper {
 
 @media all and (min-width: 1400px) {
 
-  #main > div.row {
-    padding-left: calc((100% - #{$main-content-max-width}) / 2);    
+  #main > div.row,#topbar-wrapper {
+    padding-left: 50px !important;    
   }
 
   #search-result-wrapper {
@@ -1314,8 +1337,8 @@ div.post-content .table-wrapper {
   #main > div.row > div.col-xl-8 {
     padding-left: 0;
     >div:first-child {
-      padding-left: .55rem !important;
-      padding-right: 1.9rem !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
     }
   }
 
@@ -1385,28 +1408,7 @@ div.post-content .table-wrapper {
         -ms-flex-pack: start!important;
         justify-content: flex-start!important;
       }
-    }
-
-    .cate {
-        flex-direction:column;
-        ul {
-            display:flex;
-            flex-wrap:wrap;
-            margin-left:0;
-            height:auto;
-            li {
-                width:100%;
-                a {
-                    padding-left: 1rem;
-                    font-size: 0.875rem;
-                    font-weight: 200;
-                    .fa, .fas{
-                        font-weight:100
-                    }
-                }
-            }
-        }
-    }
+    }    
     
 
     .nav-link {
@@ -1472,18 +1474,10 @@ div.post-content .table-wrapper {
 } // min-width: 1650px
 
 
-@media all and (min-width: 1700px) {
-  #topbar-wrapper {
-    padding-right: calc(100% - #{$sidebar-width-large}
-     - (1920px - #{$sidebar-width-large}) ) /* 100% - 350px - (1920px - 350px); */
-  }
+@media all and (min-width: 1700px) {    
 
-  #topbar {
-    max-width: calc(#{$main-content-max-width} + 20px)
-  }
-
-  #main > div.row {
-    padding-left: calc((100% - #{$main-content-max-width} - 2%) / 2);
+  #main > div.row,#topbar-wrapper {
+    padding-left: 50px !important;
   }
   
 
@@ -1496,9 +1490,9 @@ div.post-content .table-wrapper {
 }
 
 @media (min-width: 1920px) {
-  #main > div.row {
-    padding-left: 80px;
-  }
+  #main > div.row,#topbar-wrapper {
+    padding-left: 80px !important
+  }  
 
   #search-result-wrapper {
     padding-right: calc(100% - #{$sidebar-width-large} - 1530px);

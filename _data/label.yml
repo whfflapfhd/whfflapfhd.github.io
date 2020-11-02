@@ -7,13 +7,13 @@
 
 panel:
   lastmod: "Recent Update"
-  trending_tags: "Trending Tags"
+  trending_tags: "Tags"
   toc: "Contents"
 
 post:
   relate_posts: "Further Reading"
   button:
-    next: Newer
-    previous: Older
+    next: \f105
+    previous: \f104
 
 search_hint: "Search"   # text show on search bar
