@@ -1,6 +1,43 @@
 ---
-published: false
+published: true
+author: whfflapfhd
+date: '2021-03-03 09:21:00 +0900'
+categories:
+  - Note
+tags:
+  - Mercurial
+  - hg
+title: Mercurial(hg) 명령어
 ---
-## A New Post
+## Mercurial(hg) 명령어
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+### hg rollback
+지정한 구간으로 롤백
+
+```
+hg update -C -r **revision number**
+```
+
+### hg merge
+
+```
+hg merge **branch name**
+```
+
+### hg pull
+
+```
+hg pull -b **branch name**
+```
+
+### hg branch list
+
+```
+hg branches
+```
+
+### hg current branch
+
+```
+hg branch
+```
